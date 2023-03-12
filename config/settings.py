@@ -62,7 +62,9 @@ REST_FRAMEWORK = {
     # SETUP REST FRAMEWORK AUTHENTICATION
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.SessionAuthentication',
-    ]
+    ],
+    # SETUP FILTER
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 
 }
 
